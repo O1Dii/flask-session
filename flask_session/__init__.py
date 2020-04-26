@@ -9,11 +9,12 @@
     :license: BSD, see LICENSE for more details.
 """
 
-__version__ = '0.3.1'
+__version__ = '0.3.2'
 
 import os
 
-from .sessions import NullSessionInterface, RedisSessionInterface, \
+from .RedisSessionInterface import RedisSessionInterface
+from .sessions import NullSessionInterface, \
     MemcachedSessionInterface, FileSystemSessionInterface, \
     MongoDBSessionInterface, SqlAlchemySessionInterface
 
